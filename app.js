@@ -70,10 +70,10 @@ const sessionOpt = {
   },
 };
 
-// // Initial Route
-// app.get("/", (req, res) => {
-//   res.render("listings/home.ejs");
-// });
+// Initial Route
+app.get("/", (req, res) => {
+res.render("listings/home.ejs");
+});
 
 app.use(session(sessionOpt));
 app.use(flash()); //Always use before routes
