@@ -71,7 +71,7 @@ const sessionOpt = {
 };
 
 // Initial Route
-app.get("/listings", (req, res) => {
+app.get("/", (req, res) => {
 res.render("listings/home.ejs");
 });
 
